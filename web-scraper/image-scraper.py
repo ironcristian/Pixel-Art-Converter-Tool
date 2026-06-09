@@ -22,15 +22,12 @@ img_tags_blocks = BS(img_tags_blocks_url_html, "html.parser")
 
 
 
-header = {
-    "User-Agent": "BlockImage/1.0 (block project)"
-}
-
-
+item_count = 0
 for img in img_tags_blocks("img", class_="pixel-image"):  # Check all a tags for the right one that has (class="image")
                                                           # in the <img>. There are many other images so thats why we check
                                                           # from what i saw, only the main image of the page has (class="image").
 
+    item_count += 1
     image_src = img.get("src")                            # src is the relative link. We then join the base url with this relative link
     image_alt = img.get("alt")                            # alt is the filename so we can properly label our images
     
@@ -46,3 +43,5 @@ for img in img_tags_blocks("img", class_="pixel-image"):  # Check all a tags for
             f.write(image.content)
     
     print(image_alt, image_src, fullurl)
+
+print(item_count)

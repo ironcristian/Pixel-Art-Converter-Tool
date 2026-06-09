@@ -19,14 +19,14 @@ max_world_height = 164
 
 def load_image():
     print("Button Pressed")
-    global img
+    global img # Python can read global variables but cannot assign them so we need to declare them global in every function
     path = tkinter.filedialog.askopenfilename(title="Image Selection",
-        filetypes=[("Image Files", "*.jpg;*.png;*.jpeg;*.bmp;*.tiff;*.gif")])
+        filetypes=[("Image Files", "*.jpg;*.png;*.jpeg;*.bmp;*.tiff;*.gif")]) # The Selected image's path
 
-    if path: 
-        img = Image.open(path)
+    if path: # If an image is chosen then we 
+        img = Image.open(path) # Loads file into memory. PS (This is why we need to declare img global)
         print(f"Loaded: {path}")
-        open_new_window(img)
+        open_new_window(img) 
 
     
 def sliding(value):
@@ -74,19 +74,19 @@ def open_new_window(image):
 
     scale = min(MAX_W / image.width, MAX_H / image.height, 1) # Make any images be able to fit inside a 600x400 square, so big images dont take up the whole screen
 
-    display_size = (
+    display_size = ( # Resolution of the image scaled down to fit in a 600x400 box
         int(image.width * scale),
         int(image.height * scale)
     )
 
     w, h = display_size 
     new_window = ctk.CTkToplevel(root)
-    new_window.geometry(f"{w + 200}x{h + 200}")
+    new_window.geometry(f"{w + 200}x{h + 200}") # + 200 to allow space for widgets and other elements on screen + image
     new_window.title("Pixelated Preview")
 
-    image_size = image.size
+    image_size = image.size # Not neccesary to make variable but improves readibility
     image_w, image_h = image.size
-    if image_w > max_world_height or image_h > max_world_height:    
+    if image_w > max_world_width or image_h > max_world_height:    
         image_size_label = ctk.CTkLabel(
             new_window,
             text=f"Image Size: {image_size} (Image cannot fit in a world)",
@@ -102,21 +102,27 @@ def open_new_window(image):
         )
     image_size_label.pack(pady=(20, 0))
 
-    image_frame = ctk.CTkFrame(new_window)
-    image_frame.pack(padx=20, pady=20, fill="both", expand=True)
+    image_frame = ctk.CTkFrame(new_window) # Make a new Frame (basically a container for elements)
+    image_frame.pack(padx=20, pady=20, fill="both", expand=True) # This frame will hold the image, i also give it padding
+    # A frame doesnt have a resolution it just takes up all sapce available in the whole window. 
+    # Due to padding from itself and other elements, it does not actually cover the whole screen
 
-
-    preview_img = ctk.CTkImage(
+    preview_img = ctk.CTkImage( # CTKImage creates an image object so nothing is displayed yet 
         light_image=image,
         dark_image=image,
-        size=display_size
-    )
+        size=display_size # Set the resolution at which the image should be displayed at
+    ) 
 
-    image_label = ctk.CTkLabel(
+    image_label = ctk.CTkLabel( # This actually displayed the image object
         image_frame,
         text="",
-        image=preview_img
+        image=preview_img # Image to display
     )
+
+    # Stretches the Label to match the size of the frame, 
+    # resulting in the image always being centered
+    # Even when the window is resized
+    #            vvvvvvvvvvvv
     image_label.pack(fill="both", expand=True)
 
     slider = ctk.CTkSlider(
@@ -147,7 +153,7 @@ root.mainloop()
 #arr = np.array(img)
 #print("Array shape: ", arr.shape)
 #print("Test image saved to ../output/pixel_images/test_output.png")
-
+3
 #img = Image.open("../assets/input/Blackberry-pie-c418fda.jpg")
 
 #img_resized = img.resize((img.width // 8 , img.height // 8), resample=Image.NEAREST)
