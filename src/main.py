@@ -17,6 +17,8 @@ preview_img = None
 max_world_width = 300
 max_world_height = 164
 
+
+
 def load_image():
     print("Button Pressed")
     global img # Python can read global variables but cannot assign them so we need to declare them global in every function
@@ -136,10 +138,8 @@ def open_new_window(image):
     slider.pack(pady=(40,10), padx=40)
     slider.set(1)
 
-    slider_label = ctk.CTkLabel(new_window, text="")
+    slider_label = ctk.CTkLabel(new_window, text="1")
     slider_label.pack(pady=10)
-
-
 
 file_but = ctk.CTkButton(root, text="Choose File to Convert", command=load_image)
 file_but.pack(pady=40)
