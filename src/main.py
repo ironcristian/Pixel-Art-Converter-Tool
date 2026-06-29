@@ -16,7 +16,7 @@ image_label = None
 preview_img = None
 max_world_width = 300
 max_world_height = 164
-
+CONVERTABLE = False
 
 
 def load_image():
@@ -31,8 +31,11 @@ def load_image():
         open_new_window(img) 
 
     
+
+
 def sliding(value):
     global img, preview_img, image_label, slider_label, pixelated_size
+    display_size = calculate_display_size(img)
 
     value = max(1, int(value)) #Why get max? In case  value is 0. Even if we set "from_" to 1 the GUI might still return 0.99, which int()
                                # Will round to 0. So we get the max of this incase the value returnes by the GUI is 0.
@@ -69,45 +72,71 @@ def sliding(value):
             text_color="white"
         )
 
-    #preview_img
-def open_new_window(image):
-    global image_label, preview_img, slider_label, image_size_label, display_size
+
+
+def calculate_display_size(image):
+
     MAX_W, MAX_H = 600, 400
 
-    scale = min(MAX_W / image.width, MAX_H / image.height, 1) # Make any images be able to fit inside a 600x400 square, so big images dont take up the whole screen
+    scale = min(MAX_W / image.width, MAX_H / image.height, 1)
 
     display_size = ( # Resolution of the image scaled down to fit in a 600x400 box
         int(image.width * scale),
         int(image.height * scale)
     )
 
-    w, h = display_size 
-    new_window = ctk.CTkToplevel(root)
-    new_window.geometry(f"{w + 200}x{h + 200}") # + 200 to allow space for widgets and other elements on screen + image
-    new_window.title("Pixelated Preview")
+    return display_size
 
-    image_size = image.size # Not neccesary to make variable but improves readibility
-    image_w, image_h = image.size
-    if image_w > max_world_width or image_h > max_world_height:    
+
+
+def create_preview_window(display_size):
+    w, h = display_size
+
+    new_window = ctk.CTkToplevel(root)
+    new_window.geometry(f"{w + 200}x{h + 200}")
+    new_window.title("Pixelated_Preview")
+
+    return new_window
+
+
+def create_image_size_label(window, image):
+    global image_size_label
+
+    if image.width > max_world_width or image.height > max_world_height:    
         image_size_label = ctk.CTkLabel(
-            new_window,
-            text=f"Image Size: {image_size} (Image cannot fit in a world)",
+            window,
+            text=f"Image Size: {image.size} (Image cannot fit in a world)",
             font=("Arial", 18),
             text_color="red"
         )
     else:
         image_size_label = ctk.CTkLabel(
-            new_window,
-            text=f"Image Size: {image_size}",
+            window,
+            text=f"Image Size: {image.size}",
             font=("Arial", 18),
             text_color="white"
         )
+
+
     image_size_label.pack(pady=(20, 0))
 
-    image_frame = ctk.CTkFrame(new_window) # Make a new Frame (basically a container for elements)
-    image_frame.pack(padx=20, pady=20, fill="both", expand=True) # This frame will hold the image, i also give it padding
+def create_image_frame(window):
+     
+    image_frame = ctk.CTkFrame(window) # Make a new Frame (basically a container for elements)
+    image_frame.pack(
+        padx=20,
+        pady=20,
+        fill="both",
+        expand=True
+    ) 
+    # This frame will hold the image, i also give it padding
     # A frame doesnt have a resolution it just takes up all sapce available in the whole window. 
     # Due to padding from itself and other elements, it does not actually cover the whole screen
+
+    return image_frame
+
+def create_image_preview(frame, image, display_size):
+    global preview_img, image_label
 
     preview_img = ctk.CTkImage( # CTKImage creates an image object so nothing is displayed yet 
         light_image=image,
@@ -116,7 +145,7 @@ def open_new_window(image):
     ) 
 
     image_label = ctk.CTkLabel( # This actually displayed the image object
-        image_frame,
+        frame,
         text="",
         image=preview_img # Image to display
     )
@@ -125,10 +154,14 @@ def open_new_window(image):
     # resulting in the image always being centered
     # Even when the window is resized
     #            vvvvvvvvvvvv
+
     image_label.pack(fill="both", expand=True)
 
+def create_slider(window):
+    global slider_label
+
     slider = ctk.CTkSlider(
-        new_window,
+        window,
         from_=1,
         to=100, 
         command=sliding
@@ -138,8 +171,24 @@ def open_new_window(image):
     slider.pack(pady=(40,10), padx=40)
     slider.set(1)
 
-    slider_label = ctk.CTkLabel(new_window, text="1")
+    slider_label = ctk.CTkLabel(window, text="1")
     slider_label.pack(pady=10)
+
+    #preview_img
+def open_new_window(image):
+
+    display_size = calculate_display_size(image)
+
+    new_window = create_preview_window(display_size)
+
+    create_image_size_label(new_window, image)
+
+    image_frame = create_image_frame(new_window)
+
+    create_image_preview(image_frame, image, display_size)
+
+    create_slider(new_window)
+
 
 file_but = ctk.CTkButton(root, text="Choose File to Convert", command=load_image)
 file_but.pack(pady=40)
