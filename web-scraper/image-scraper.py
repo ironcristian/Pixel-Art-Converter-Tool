@@ -4,6 +4,14 @@ from urllib.parse import urljoin
 import re
 import time
 import os
+import logging
+
+logging.basicConfig(
+    format="{asctime} - {levelname}: {message}",
+    style = "{",
+    level=logging.DEBUG,
+    datefmt="%d/%m/%Y %H:%M"
+)
 
 HEADERS = {       
     # "Header Name": program_name/Version number extra comment. Need this to prevent some rate limiting                             
