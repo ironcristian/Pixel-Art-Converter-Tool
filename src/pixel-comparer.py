@@ -17,16 +17,18 @@ def find_file(file_name):
 def is_valid_pixel(pixel): # Checks if the pixel is out of bounds of the image  
     return
 
-def calculate_average_rgb_5x4(pixels, start_pixel):
-    block_size = "5x4"
-    json_data_filename = "blocks-5x4.json"
+
+
+def calculate_average_rgb_and_best_match(pixels, start_pixel, size):
+    block_size = size
+    json_data_filename = f"blocks-{size}.json"
     x, y = start_pixel
-    width, height = 5, 4
+    width, height = int(size[0]), int(size[2]) # Index of the {size} string where there is the numbers
     total_pixels = width * height
 
     chosen_pixels = []
     
-    # Iterate through all pixels in 5x4 area and add to the list "chosen_pixels"
+    # Iterate through all pixels in chosen area {size} and add to the list "chosen_pixels"
     for i in range(width):
         for k in range(height):
             if is_valid_pixel(pixels[x + i, y + k]) == True:
@@ -44,7 +46,7 @@ def calculate_average_rgb_5x4(pixels, start_pixel):
         blocks = json.load(file)
 
 
-    best_colour_match = ("", 9999) # Random High number so I can compare to colour diffrence
+    best_colour_match = ("", 9999, "") # Random High number so I can compare to colour diffrence
     for k, v in blocks.items():
         # k is the name of the block
         # v is the RGB value of that block
@@ -61,42 +63,94 @@ def calculate_average_rgb_5x4(pixels, start_pixel):
 
     return best_colour_match
 
+def crop_image(size, image_path):
+    # Because size is a string I index it to get the numbers
+    block_tile_width = int(size[0]) 
+    block_tile_height = int(size[2])
 
+    if size == "1x1": # Only 1x1 images need the 4 extra pixels cropped
 
-def calculate_all_area_rgb_averages(image, start_pixel=None): # Calculates average RGB value of all size regions (block sizes) starting from "start_pixel"
-
-    if start_pixel == None:
-        start_pixel = [0, 0]
+        block_image = Image.open(image_path).convert("RGBA")  # Needs to be RGBA so we can drop the transparent pixels
     
+        bounding_box = block_image.getbbox()
+        removed_transparent_pixels_block = block_image.crop(bounding_box)
 
+        cropped_block = removed_transparent_pixels_block.crop((0, 4, 16, 20))
+
+        return (cropped_block, None)
+    else:
+        block_image = Image.open(image_path).convert("RGBA")  # Needs to be RGBA so we can drop the transparent pixels
+    
+        bounding_box = block_image.getbbox()
+        removed_transparent_pixels_block = block_image.crop(bounding_box)
+
+        width, height = removed_transparent_pixels_block.size
+
+        empty_space_x = (16 * block_tile_width ) - width
+        empty_space_y = (16 * block_tile_height ) - height
+
+        offset_x = empty_space_y // 2
+        offset_y = empty_space_y // 2
+
+        return (removed_transparent_pixels_block, offset_x, offset_x)
+
+
+
+
+       
+def calculate_offset_for_big_blocks()
+
+def calculate_all_area_rgb_averages(image, pixelated_image_size): # Calculates average RGB value of all size regions (block sizes) starting from "start_pixel"
+    pixelated_image_width, pixelated_image_height = pixelated_image_size
+
+    start_pixel = [0, 0]
+
+    
     pixels = image.load() # Now the pixels in the image can be acceses as a point in a 2D coordinate system
+    pixels_finished_processing = False
+
+    while not pixels_finished_processing:
+        best_matches_for_all_sizes = [
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "5x4"),
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "4x4"),
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "4x3"),
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "4x2"),
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "3x4"),
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "3x3"),
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "3x2"),
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "2x4"),
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "2x3"),
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "2x2"),
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "2x1"),
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "1x4"),
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "1x3"),
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "1x2"),
+            calculate_average_rgb_and_best_match(pixels, start_pixel, "1x1"),
+        ]
 
 
-    best_matches_all_sizes = [
-        calculate_average_rgb_5x4(),
-        calculate_average_rgb_4x4(),
-        calculate_average_rgb_4x3(),
-        calculate_average_rgb_3x3(),
-        calculate_average_rgb_3x2(),
-        calculate_average_rgb_2x4(),
-        calculate_average_rgb_2x3(),
-        calculate_average_rgb_2x2(),
-        calculate_average_rgb_2x1(),
-        calculate_average_rgb_1x3(),
-        calculate_average_rgb_1x2(),
-        calculate_average_rgb_1x1()
-    ]
+        best_match_overall = min(best_matches_for_all_sizes, key=lambda each_list: each_list[1])
+        FILENAME, COLOUR_DIFFERENCE, BLOCK_SIZE = best_match_overall
+
+
+        block_filepath = find_file(FILENAME) # index [0] contains the filename
+        cropped_block = crop_image(BLOCK_SIZE, block_filepath)
+
+        canvas = Image.new(
+            "RGBA", # Canvas mode
+            (pixelated_image_width, pixelated_image_height),
+            (0, 0, 0, 0)
+        )
+
+        canvas.paste(
+            cropped_block,
+            ()
+        )
+        
+        start_pixel_x = start_pixel[0] + int(BLOCK_SIZE[0])
+        start_pixel_y = start_pixel[1] + int(BLOCK_SIZE[2])
     
-
-    best_match_overall = min(best_matches_all_sizes)
-
-
-    block_filepath = find_file(best_match_overall[0]) # index [0] contains the filename
-    block_image = Image.open(block_filepath).convert("RGBA")  # Needs to be RGBA so we can drop the transparent pixels
-    
-    bounding_box = block_image.getbbox()
-    cropped_block = block_image.crop(bounding_box)
-    
+        start_pixel = [start_pixel_x, start_pixel_y]
 
 
 
