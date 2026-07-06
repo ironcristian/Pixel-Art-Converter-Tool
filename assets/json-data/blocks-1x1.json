@@ -14,6 +14,36 @@
         56,
         52
     ],
+    "Bass Guitar Block sprite": [
+        49,
+        37,
+        32
+    ],
+    "Bedrock sprite": [
+        31,
+        18,
+        29
+    ],
+    "Bee Plushie sprite": [
+        23,
+        17,
+        11
+    ],
+    "Beeswax Block sprite": [
+        73,
+        50,
+        18
+    ],
+    "Beeswax Candle sprite": [
+        26,
+        16,
+        6
+    ],
+    "Big Dark Stalagmite sprite": [
+        18,
+        22,
+        31
+    ],
     "Black Block sprite": [
         14,
         14,
@@ -23,6 +53,11 @@
         13,
         14,
         16
+    ],
+    "Black Tulip sprite": [
+        3,
+        9,
+        5
     ],
     "Blue Block sprite": [
         13,
@@ -34,6 +69,16 @@
         21,
         47
     ],
+    "Blue Button Platform sprite": [
+        6,
+        15,
+        34
+    ],
+    "Blue Button sprite": [
+        12,
+        16,
+        27
+    ],
     "Blue Led Block sprite": [
         12,
         17,
@@ -44,30 +89,80 @@
         62,
         74
     ],
+    "Blue Tulip sprite": [
+        3,
+        9,
+        10
+    ],
     "Blueberry Jelly Block sprite": [
         8,
         41,
         76
+    ],
+    "Bone Pile sprite": [
+        76,
+        63,
+        59
+    ],
+    "Brittlegill sprite": [
+        33,
+        29,
+        26
+    ],
+    "Broken Stone Bricks sprite": [
+        30,
+        30,
+        25
     ],
     "Brown Block sprite": [
         26,
         15,
         10
     ],
+    "Cactus sprite": [
+        22,
+        33,
+        16
+    ],
+    "Candle sprite": [
+        25,
+        19,
+        12
+    ],
     "Candy Cane Block sprite": [
         70,
         39,
         39
+    ],
+    "Candy Ore sprite": [
+        12,
+        9,
+        12
     ],
     "Carved Pumpkin Block sprite": [
         60,
         28,
         6
     ],
+    "Cheese Block sprite": [
+        73,
+        51,
+        12
+    ],
     "Clay Block sprite": [
         38,
         13,
         15
+    ],
+    "Clay Bricks sprite": [
+        42,
+        19,
+        15
+    ],
+    "Coal Ore sprite": [
+        9,
+        8,
+        14
     ],
     "Concrete Block sprite": [
         37,
@@ -84,6 +179,16 @@
         41,
         29
     ],
+    "Copper Ore sprite": [
+        53,
+        26,
+        14
+    ],
+    "Cracked Darkstone Bricks sprite": [
+        11,
+        12,
+        16
+    ],
     "Cyan Block sprite": [
         17,
         58,
@@ -93,6 +198,16 @@
         14,
         47,
         50
+    ],
+    "Cyan Button Platform sprite": [
+        3,
+        32,
+        35
+    ],
+    "Cyan Button sprite": [
+        14,
+        26,
+        28
     ],
     "Cyan Led Block sprite": [
         14,
@@ -111,8 +226,8 @@
     ],
     "Dark Chocolate Block sprite": [
         24,
-        15,
-        11
+        11,
+        7
     ],
     "Dark Cyan Block sprite": [
         0,
@@ -154,20 +269,35 @@
         11,
         15
     ],
+    "Darkstone Bricks sprite": [
+        11,
+        12,
+        16
+    ],
     "Darkstone Emerald Ore Block sprite": [
         10,
         12,
         15
     ],
-    "Diamond Achievement Block sprite": [
-        151,
-        188,
-        213
+    "Dead Bush sprite": [
+        15,
+        9,
+        6
+    ],
+    "Diamond Ore sprite": [
+        12,
+        13,
+        16
+    ],
+    "Diamond Skull sprite": [
+        24,
+        32,
+        40
     ],
     "Dirt Block sprite": [
-        24,
-        24,
-        11
+        31,
+        30,
+        13
     ],
     "Dotted Eighth Note Block sprite": [
         53,
@@ -214,6 +344,11 @@
         26,
         27
     ],
+    "Dungeon Torch sprite": [
+        18,
+        25,
+        16
+    ],
     "Eighth Note Block sprite": [
         54,
         48,
@@ -229,10 +364,45 @@
         48,
         14
     ],
+    "Emerald Ore sprite": [
+        5,
+        10,
+        8
+    ],
+    "Emerald Skull sprite": [
+        20,
+        43,
+        19
+    ],
+    "Emerald Tally Block sprite": [
+        42,
+        46,
+        43
+    ],
+    "Festive Lights sprite": [
+        6,
+        7,
+        8
+    ],
+    "Festive Tree sprite": [
+        39,
+        40,
+        27
+    ],
+    "Fireplace sprite": [
+        142,
+        77,
+        58
+    ],
     "Flute Block sprite": [
         61,
         38,
         31
+    ],
+    "Freeze Trap sprite": [
+        120,
+        136,
+        149
     ],
     "Frozen Stone Block sprite": [
         34,
@@ -244,10 +414,35 @@
         57,
         60
     ],
-    "Golden Achievement Block sprite": [
-        216,
-        174,
-        57
+    "Glowing Mud sprite": [
+        12,
+        21,
+        23
+    ],
+    "Glowing Vine sprite": [
+        2,
+        12,
+        10
+    ],
+    "Glowshroom sprite": [
+        23,
+        17,
+        32
+    ],
+    "Gold Bricks sprite": [
+        58,
+        45,
+        12
+    ],
+    "Gold Ore sprite": [
+        56,
+        39,
+        9
+    ],
+    "Grass sprite": [
+        1,
+        9,
+        1
     ],
     "Green Block sprite": [
         34,
@@ -259,6 +454,16 @@
         48,
         16
     ],
+    "Green Button Platform sprite": [
+        14,
+        34,
+        9
+    ],
+    "Green Button sprite": [
+        19,
+        26,
+        15
+    ],
     "Green Led Block sprite": [
         21,
         29,
@@ -268,11 +473,6 @@
         54,
         71,
         46
-    ],
-    "Grumpy Frog Block sprite": [
-        40,
-        19,
-        40
     ],
     "Half Note Block sprite": [
         55,
@@ -289,20 +489,40 @@
         46,
         13
     ],
+    "Honey Block sprite": [
+        73,
+        44,
+        7
+    ],
+    "Hyacinth sprite": [
+        9,
+        30,
+        29
+    ],
     "Ice Block sprite": [
         55,
         60,
         63
     ],
-    "Iron Achievement Block sprite": [
-        138,
-        155,
-        167
+    "Ice Platform sprite": [
+        22,
+        31,
+        34
     ],
     "Iron Block sprite": [
         35,
         40,
         44
+    ],
+    "Iron Ore sprite": [
+        29,
+        34,
+        39
+    ],
+    "Iron Platform sprite": [
+        21,
+        24,
+        26
     ],
     "Lava Block sprite": [
         37,
@@ -319,15 +539,40 @@
         54,
         56
     ],
+    "Magma Bricks sprite": [
+        21,
+        8,
+        6
+    ],
+    "Marble Bricks sprite": [
+        51,
+        43,
+        38
+    ],
     "Mechanical Block sprite": [
         41,
         27,
         18
     ],
+    "Medium Dark Stalagmite sprite": [
+        11,
+        13,
+        19
+    ],
     "Milk Chocolate Block sprite": [
-        29,
-        17,
+        39,
+        20,
         11
+    ],
+    "Morel sprite": [
+        23,
+        13,
+        8
+    ],
+    "Mossy Stone Bricks sprite": [
+        28,
+        28,
+        33
     ],
     "Music Block sprite": [
         51,
@@ -339,6 +584,16 @@
         22,
         13
     ],
+    "Oak Planks sprite": [
+        48,
+        29,
+        19
+    ],
+    "Oak Platform sprite": [
+        22,
+        14,
+        9
+    ],
     "Orange Block sprite": [
         70,
         34,
@@ -349,10 +604,25 @@
         28,
         11
     ],
+    "Orange Button Platform sprite": [
+        39,
+        18,
+        5
+    ],
+    "Orange Button sprite": [
+        29,
+        19,
+        13
+    ],
     "Orange Led Block sprite": [
         32,
         21,
         14
+    ],
+    "Orange Marigold sprite": [
+        18,
+        11,
+        7
     ],
     "Orange Pastel Block sprite": [
         74,
@@ -364,10 +634,25 @@
         43,
         38
     ],
+    "Pile Of Snowballs sprite": [
+        48,
+        56,
+        62
+    ],
     "Pink Block sprite": [
         70,
         41,
         55
+    ],
+    "Pink Cosmos sprite": [
+        16,
+        12,
+        12
+    ],
+    "Pink Marigold sprite": [
+        16,
+        11,
+        19
     ],
     "Polished Bone Block sprite": [
         58,
@@ -384,15 +669,20 @@
         12,
         45
     ],
+    "Purple Button Platform sprite": [
+        32,
+        7,
+        32
+    ],
+    "Purple Button sprite": [
+        24,
+        13,
+        26
+    ],
     "Purple Led Block sprite": [
         28,
         13,
         30
-    ],
-    "Purple Mushroom Block sprite": [
-        41,
-        30,
-        55
     ],
     "Purple Pastel Block sprite": [
         68,
@@ -424,20 +714,35 @@
         12,
         13
     ],
+    "Red Button Platform sprite": [
+        37,
+        6,
+        9
+    ],
+    "Red Button sprite": [
+        27,
+        13,
+        14
+    ],
     "Red Led Block sprite": [
         30,
         13,
         15
     ],
-    "Red Mushroom Block sprite": [
-        53,
-        27,
-        25
-    ],
     "Red Pastel Block sprite": [
         73,
         44,
         46
+    ],
+    "Red Rose sprite": [
+        9,
+        4,
+        3
+    ],
+    "Refined Wax Block sprite": [
+        71,
+        60,
+        43
     ],
     "Repeat End Block sprite": [
         66,
@@ -459,6 +764,26 @@
         41,
         24
     ],
+    "Sandstone Bricks sprite": [
+        53,
+        44,
+        27
+    ],
+    "Sandstone Diamond Ore sprite": [
+        21,
+        19,
+        14
+    ],
+    "Sewage Water sprite": [
+        18,
+        72,
+        2
+    ],
+    "Sewer Bricks sprite": [
+        17,
+        30,
+        27
+    ],
     "Sixteenth Note Block sprite": [
         53,
         48,
@@ -469,45 +794,140 @@
         47,
         43
     ],
+    "Skull sprite": [
+        37,
+        32,
+        31
+    ],
     "Slime Block sprite": [
         30,
         52,
         26
+    ],
+    "Small Dark Stalactite sprite": [
+        5,
+        7,
+        9
     ],
     "Snow Block sprite": [
         54,
         60,
         62
     ],
+    "Snowman sprite": [
+        117,
+        123,
+        125
+    ],
     "Snowy Dirt Block sprite": [
         36,
         32,
         32
+    ],
+    "Snowy Grass sprite": [
+        13,
+        15,
+        15
     ],
     "Snowy Stone Block sprite": [
         45,
         52,
         56
     ],
+    "Spikes sprite": [
+        10,
+        11,
+        13
+    ],
+    "Spooky Lava sprite": [
+        46,
+        11,
+        43
+    ],
+    "Spooky Torch sprite": [
+        27,
+        17,
+        23
+    ],
     "Spruce Leaf Block sprite": [
         19,
         29,
         26
+    ],
+    "Spruce Planks sprite": [
+        32,
+        21,
+        14
+    ],
+    "Spruce Platform sprite": [
+        16,
+        10,
+        7
+    ],
+    "Spruce Stool sprite": [
+        13,
+        8,
+        5
     ],
     "Stone Block sprite": [
         31,
         34,
         34
     ],
+    "Stone Bricks sprite": [
+        31,
+        31,
+        25
+    ],
     "Strawberry Jelly Block sprite": [
         72,
         13,
         10
     ],
+    "Sunflower Vine sprite": [
+        35,
+        35,
+        11
+    ],
+    "Tilled Dirt Block sprite": [
+        42,
+        21,
+        11
+    ],
+    "Traffic Cone sprite": [
+        22,
+        10,
+        9
+    ],
     "Trumpet Block sprite": [
         60,
         37,
         20
+    ],
+    "Unstable Darkstone Platform sprite": [
+        5,
+        6,
+        7
+    ],
+    "Unstable Sandstone Platform sprite": [
+        27,
+        22,
+        14
+    ],
+    "Unstable Stone Bricks Platform sprite": [
+        16,
+        16,
+        13
+    ],
+    "Water sprite": [
+        11,
+        73,
+        80
+    ],
+    "Wet Tilled Dirt Block sprite": [
+        30,
+        14,
+        8
     ],
     "White Block sprite": [
         67,
@@ -515,9 +935,14 @@
         71
     ],
     "White Chocolate Block sprite": [
-        44,
-        37,
-        28
+        63,
+        52,
+        36
+    ],
+    "White Rose sprite": [
+        10,
+        14,
+        14
     ],
     "White Timer Block sprite": [
         47,
@@ -534,11 +959,6 @@
         49,
         45
     ],
-    "Wooden Achievement Block sprite": [
-        161,
-        105,
-        71
-    ],
     "Yellow Block sprite": [
         71,
         47,
@@ -548,6 +968,21 @@
         57,
         38,
         11
+    ],
+    "Yellow Button Platform sprite": [
+        40,
+        25,
+        6
+    ],
+    "Yellow Button sprite": [
+        29,
+        23,
+        14
+    ],
+    "Yellow Cosmos sprite": [
+        18,
+        15,
+        4
     ],
     "Yellow Led Block sprite": [
         33,

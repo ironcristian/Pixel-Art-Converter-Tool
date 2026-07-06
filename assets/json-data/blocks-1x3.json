@@ -1,0 +1,92 @@
+{
+    "Arrow Surfboard sprite": [
+        35,
+        70,
+        58
+    ],
+    "Classic Surfboard sprite": [
+        93,
+        65,
+        45
+    ],
+    "Coat Rack sprite": [
+        22,
+        11,
+        8
+    ],
+    "Extreme Surfboard sprite": [
+        97,
+        55,
+        19
+    ],
+    "Flame Surfboard sprite": [
+        95,
+        68,
+        48
+    ],
+    "Floor Lamp sprite": [
+        46,
+        43,
+        37
+    ],
+    "Minty Surfboard sprite": [
+        87,
+        68,
+        51
+    ],
+    "Race End sprite": [
+        30,
+        26,
+        21
+    ],
+    "Race Start sprite": [
+        19,
+        18,
+        16
+    ],
+    "Rainbow Surfboard sprite": [
+        74,
+        50,
+        26
+    ],
+    "Sailor Surfboard sprite": [
+        65,
+        77,
+        74
+    ],
+    "Sunflower sprite": [
+        57,
+        54,
+        16
+    ],
+    "Sunny Surfboard sprite": [
+        40,
+        76,
+        53
+    ],
+    "Sunset Surfboard sprite": [
+        96,
+        50,
+        29
+    ],
+    "Tropical Surfboard sprite": [
+        55,
+        69,
+        28
+    ],
+    "Vanilla Surfboard sprite": [
+        93,
+        79,
+        64
+    ],
+    "Watermelon Surfboard sprite": [
+        87,
+        31,
+        38
+    ],
+    "Wave Surfboard sprite": [
+        69,
+        67,
+        57
+    ]
+}

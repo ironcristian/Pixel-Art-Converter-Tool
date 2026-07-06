@@ -1,0 +1,132 @@
+{
+    "Coffin sprite": [
+        118,
+        67,
+        36
+    ],
+    "Copper Golem Painting sprite": [
+        77,
+        55,
+        48
+    ],
+    "Door sprite": [
+        95,
+        58,
+        39
+    ],
+    "Dungeon Door sprite": [
+        66,
+        46,
+        38
+    ],
+    "Farmhive sprite": [
+        109,
+        66,
+        52
+    ],
+    "Ice Slime Painting sprite": [
+        61,
+        58,
+        58
+    ],
+    "Infected Frog Leg Painting sprite": [
+        59,
+        41,
+        50
+    ],
+    "Lava Slime Painting sprite": [
+        60,
+        29,
+        25
+    ],
+    "Mummy Painting sprite": [
+        60,
+        46,
+        37
+    ],
+    "Oak Mannequin sprite": [
+        62,
+        35,
+        25
+    ],
+    "Oak Table sprite": [
+        75,
+        43,
+        30
+    ],
+    "Phone Booth sprite": [
+        44,
+        59,
+        80
+    ],
+    "Radioactive Slime Painting sprite": [
+        39,
+        65,
+        29
+    ],
+    "Sand Slime Painting sprite": [
+        67,
+        53,
+        37
+    ],
+    "Sideways Door sprite": [
+        82,
+        49,
+        33
+    ],
+    "Sideways Dungeon Door sprite": [
+        57,
+        39,
+        33
+    ],
+    "Skeleton Painting sprite": [
+        60,
+        48,
+        47
+    ],
+    "Slime Painting sprite": [
+        44,
+        51,
+        39
+    ],
+    "Snow Golem Painting sprite": [
+        73,
+        70,
+        75
+    ],
+    "Spruce Barrel sprite": [
+        81,
+        61,
+        61
+    ],
+    "Spruce Mannequin sprite": [
+        40,
+        25,
+        17
+    ],
+    "Spruce Table sprite": [
+        39,
+        24,
+        17
+    ],
+    "Stone Mannequin sprite": [
+        47,
+        47,
+        47
+    ],
+    "Street Bench sprite": [
+        51,
+        34,
+        27
+    ],
+    "Vending Machine sprite": [
+        49,
+        109,
+        140
+    ],
+    "Zombie Painting sprite": [
+        39,
+        37,
+        29
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "Bathtub sprite": [
+        18,
+        20,
+        24
+    ],
+    "Beach Umbrella sprite": [
+        64,
+        43,
+        42
+    ],
+    "Loom sprite": [
+        123,
+        84,
+        70
+    ],
+    "Scarecrow sprite": [
+        75,
+        43,
+        33
+    ],
+    "Well sprite": [
+        78,
+        61,
+        50
+    ]
+}

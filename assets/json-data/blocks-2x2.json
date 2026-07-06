@@ -1,0 +1,372 @@
+{
+    "AC Unit sprite": [
+        76,
+        78,
+        83
+    ],
+    "Arrow Sign sprite": [
+        55,
+        32,
+        22
+    ],
+    "Art ROTD sprite": [
+        74,
+        54,
+        21
+    ],
+    "Barricade Window sprite": [
+        55,
+        34,
+        27
+    ],
+    "Beach Ball sprite": [
+        88,
+        82,
+        75
+    ],
+    "Beach Chair sprite": [
+        102,
+        57,
+        52
+    ],
+    "Bee Nest sprite": [
+        78,
+        49,
+        7
+    ],
+    "Beehive sprite": [
+        64,
+        38,
+        30
+    ],
+    "Beginner Crystal sprite": [
+        129,
+        62,
+        118
+    ],
+    "Big Bouncy Mushroom sprite": [
+        106,
+        63,
+        53
+    ],
+    "Big Bunny Plushie sprite": [
+        86,
+        84,
+        96
+    ],
+    "Big Dark Stalactite sprite": [
+        15,
+        18,
+        26
+    ],
+    "Bookshelf sprite": [
+        141,
+        95,
+        70
+    ],
+    "Bouncy Glowshroom sprite": [
+        80,
+        62,
+        103
+    ],
+    "Bunny Bubble Blower sprite": [
+        101,
+        60,
+        114
+    ],
+    "Bunny Ear Cactus sprite": [
+        44,
+        65,
+        32
+    ],
+    "Campfire sprite": [
+        69,
+        53,
+        34
+    ],
+    "Candy Bucket sprite": [
+        19,
+        19,
+        24
+    ],
+    "Candy Ore Cluster sprite": [
+        33,
+        23,
+        32
+    ],
+    "Cheese Press sprite": [
+        80,
+        63,
+        54
+    ],
+    "Community Board sprite": [
+        140,
+        121,
+        105
+    ],
+    "CRM Terminal sprite": [
+        56,
+        95,
+        79
+    ],
+    "Dart Trap sprite": [
+        119,
+        132,
+        147
+    ],
+    "Diamond Achievement Block sprite": [
+        151,
+        188,
+        213
+    ],
+    "Dice Block sprite": [
+        173,
+        179,
+        180
+    ],
+    "Dresser sprite": [
+        159,
+        94,
+        61
+    ],
+    "Drill sprite": [
+        85,
+        72,
+        81
+    ],
+    "Electric Trap sprite": [
+        124,
+        124,
+        117
+    ],
+    "Emerald Gate sprite": [
+        130,
+        142,
+        132
+    ],
+    "Emerald Ore Cluster sprite": [
+        14,
+        26,
+        22
+    ],
+    "Empty Basket sprite": [
+        49,
+        26,
+        17
+    ],
+    "Empty Crate sprite": [
+        172,
+        104,
+        70
+    ],
+    "Fire Trap sprite": [
+        131,
+        108,
+        103
+    ],
+    "Flower Basket sprite": [
+        61,
+        48,
+        38
+    ],
+    "Furnace sprite": [
+        83,
+        83,
+        69
+    ],
+    "Glass Display Case sprite": [
+        160,
+        213,
+        220
+    ],
+    "Golden Achievement Block sprite": [
+        216,
+        174,
+        57
+    ],
+    "Gravestone sprite": [
+        80,
+        81,
+        66
+    ],
+    "Hay Bale sprite": [
+        148,
+        86,
+        11
+    ],
+    "Horned Melon Block sprite": [
+        154,
+        97,
+        20
+    ],
+    "Infection Rune Stone sprite": [
+        44,
+        40,
+        47
+    ],
+    "Iron Achievement Block sprite": [
+        138,
+        155,
+        167
+    ],
+    "Knockback Rune Stone sprite": [
+        44,
+        42,
+        47
+    ],
+    "Landscape Painting sprite": [
+        64,
+        65,
+        61
+    ],
+    "Leaderboard sprite": [
+        85,
+        73,
+        66
+    ],
+    "Mailbox sprite": [
+        56,
+        55,
+        57
+    ],
+    "Medium Dark Stalactite sprite": [
+        10,
+        12,
+        17
+    ],
+    "Music ROTD sprite": [
+        66,
+        45,
+        17
+    ],
+    "Oak Crate sprite": [
+        164,
+        94,
+        65
+    ],
+    "Oak Sapling sprite": [
+        36,
+        39,
+        25
+    ],
+    "Oak Sign sprite": [
+        82,
+        48,
+        33
+    ],
+    "Painting Station sprite": [
+        171,
+        94,
+        63
+    ],
+    "Parkour ROTD sprite": [
+        57,
+        42,
+        16
+    ],
+    "Picnic Basket sprite": [
+        84,
+        46,
+        27
+    ],
+    "Potion Rune Stone sprite": [
+        43,
+        40,
+        46
+    ],
+    "Potted Plant sprite": [
+        35,
+        40,
+        14
+    ],
+    "Race Gate sprite": [
+        85,
+        88,
+        99
+    ],
+    "Rusty Dart Trap sprite": [
+        120,
+        122,
+        132
+    ],
+    "Rusty Electric Trap sprite": [
+        126,
+        116,
+        106
+    ],
+    "Rusty Fire Trap sprite": [
+        107,
+        100,
+        108
+    ],
+    "Rusty Metal Crate sprite": [
+        110,
+        113,
+        123
+    ],
+    "Sawblade sprite": [
+        64,
+        73,
+        83
+    ],
+    "Seed Maker sprite": [
+        63,
+        53,
+        48
+    ],
+    "Sink sprite": [
+        118,
+        84,
+        69
+    ],
+    "Special ROTD sprite": [
+        86,
+        62,
+        26
+    ],
+    "Spider Web sprite": [
+        46,
+        46,
+        46
+    ],
+    "Spruce Sapling sprite": [
+        8,
+        12,
+        11
+    ],
+    "Spruce Sign sprite": [
+        54,
+        34,
+        24
+    ],
+    "Story ROTD sprite": [
+        103,
+        75,
+        23
+    ],
+    "Table Saw sprite": [
+        114,
+        80,
+        69
+    ],
+    "Watermelon Block sprite": [
+        57,
+        125,
+        52
+    ],
+    "Wheelbarrow sprite": [
+        52,
+        32,
+        28
+    ],
+    "Witch Cauldron sprite": [
+        34,
+        36,
+        38
+    ],
+    "Wooden Achievement Block sprite": [
+        161,
+        105,
+        71
+    ]
+}

@@ -1,0 +1,162 @@
+{
+    "Anvil sprite": [
+        43,
+        50,
+        55
+    ],
+    "Big Pile Of Rocks sprite": [
+        40,
+        38,
+        43
+    ],
+    "Big Pile Of Sandstone Rocks sprite": [
+        66,
+        48,
+        31
+    ],
+    "Big Snowy Pile Of Rocks sprite": [
+        62,
+        70,
+        75
+    ],
+    "Blue Pressure Plate sprite": [
+        18,
+        26,
+        44
+    ],
+    "Boombox sprite": [
+        46,
+        41,
+        46
+    ],
+    "Bush sprite": [
+        11,
+        33,
+        6
+    ],
+    "Carved Pumpkin sprite": [
+        65,
+        33,
+        15
+    ],
+    "Ceiling Lamp sprite": [
+        6,
+        7,
+        8
+    ],
+    "Chest sprite": [
+        124,
+        79,
+        28
+    ],
+    "Composter sprite": [
+        93,
+        58,
+        34
+    ],
+    "Cyan Pressure Plate sprite": [
+        21,
+        42,
+        45
+    ],
+    "Glass Coffee Table sprite": [
+        65,
+        62,
+        60
+    ],
+    "Green Pressure Plate sprite": [
+        30,
+        43,
+        23
+    ],
+    "Jack O'lantern sprite": [
+        76,
+        46,
+        20
+    ],
+    "Marble Column sprite": [
+        108,
+        92,
+        83
+    ],
+    "Oak Coffee Table sprite": [
+        84,
+        46,
+        29
+    ],
+    "Oak Log sprite": [
+        44,
+        25,
+        20
+    ],
+    "Oak Trapdoor sprite": [
+        40,
+        24,
+        16
+    ],
+    "Orange Pressure Plate sprite": [
+        46,
+        31,
+        21
+    ],
+    "Pumpkin sprite": [
+        74,
+        41,
+        17
+    ],
+    "Purple Pressure Plate sprite": [
+        40,
+        21,
+        42
+    ],
+    "Red Pressure Plate sprite": [
+        43,
+        20,
+        22
+    ],
+    "Sideways Spike Trap sprite": [
+        12,
+        8,
+        7
+    ],
+    "Snowy Bush sprite": [
+        34,
+        49,
+        48
+    ],
+    "Spring sprite": [
+        31,
+        20,
+        13
+    ],
+    "Spruce Coffee Table sprite": [
+        56,
+        33,
+        22
+    ],
+    "Spruce Log sprite": [
+        28,
+        17,
+        15
+    ],
+    "Spruce Trapdoor sprite": [
+        24,
+        15,
+        11
+    ],
+    "Tv sprite": [
+        69,
+        71,
+        70
+    ],
+    "Weapons Display sprite": [
+        57,
+        45,
+        47
+    ],
+    "Yellow Pressure Plate sprite": [
+        46,
+        38,
+        22
+    ]
+}

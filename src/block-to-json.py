@@ -10,13 +10,16 @@ SIZES_NAMES = {
     "1x3": "blocks-1x3",
     "2x1": "blocks-2x1",
     "1x2": "blocks-1x2",
+    "1x4": "blocks-1x4",
     "2x4": "blocks-2x4",
     "3x2": "blocks-3x2",
     "3x3": "blocks-3x3",
     "2x3": "blocks-2x3",
     "4x4": "blocks-4x4",
     "4x3": "blocks-4x3",
-    "5x4": "blocks-5x4"
+    "5x4": "blocks-5x4",
+    "4x2": "blocks-4x2",
+    "3x4": "blocks-3x4"
 }
 
 
@@ -25,7 +28,7 @@ blocks = {}
 for folder in Path("../assets/blocks").iterdir(): # Returns all items in dir as Path objects (folders)
     if folder.name in EXCLUDED_FOLDERS:
         continue
-
+    blocks = {}
     for file in folder.iterdir(): 
         if file.suffix.lower() == ".png" and "sprite" in file.stem.lower(): # If the file is a png AND it contains the work block
         
@@ -46,8 +49,5 @@ for folder in Path("../assets/blocks").iterdir(): # Returns all items in dir as 
             blocks[file.stem] = average_rgb
 
         file_name = SIZES_NAMES.get(folder.name)
-        with open(f"../assets/json-data/{file_name}", "w") as f:
+        with open(f"../assets/json-data/{file_name}.json", "w") as f:
             json.dump(blocks, f, indent=4) # dump() converts python data into json format so we convert the "blocks" dictionary into json format
-
-        
-

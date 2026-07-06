@@ -1,0 +1,47 @@
+{
+    "Arrow Traffic Sign sprite": [
+        37,
+        59,
+        83
+    ],
+    "Blue Arm Chair sprite": [
+        32,
+        87,
+        149
+    ],
+    "Entrance sprite": [
+        98,
+        69,
+        23
+    ],
+    "Frog Terrarium sprite": [
+        99,
+        142,
+        144
+    ],
+    "Keypad Door sprite": [
+        103,
+        124,
+        137
+    ],
+    "Red Arm Chair sprite": [
+        137,
+        33,
+        41
+    ],
+    "Speed Limit Sign sprite": [
+        68,
+        44,
+        53
+    ],
+    "Stop Sign sprite": [
+        73,
+        34,
+        46
+    ],
+    "Workbench sprite": [
+        84,
+        45,
+        41
+    ]
+}
